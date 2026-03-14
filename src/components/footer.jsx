@@ -63,7 +63,7 @@ const Footer = () => {
     </li>
     <li>
       <Link to="/produtos?categoria=ConesTrufados" className="hover:text-pink-600 transition">
-        Cones Trufados
+        Conestrufados
       </Link>
     </li>
     <li>

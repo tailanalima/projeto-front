@@ -37,7 +37,7 @@ useEffect(() => {
 
   const allFilters = [
     { label: 'Sabores', options: ['Chocolate', 'Ninho+Nutela', 'Uva', 'Pistache', 'Morango', 'DoceDeLeite', 'ChocoBranco', 'Sensação', 'Outros'] },
-    { label: 'Categoria', options: ['Bolos', 'Brownies', 'Dindins', 'ConesTrufados', 'Sobremesas'] },
+    { label: 'Categoria', options: ['Bolos', 'Brownies', 'Dindins', 'Conestrufados', 'Sobremesas'] },
     { label: 'Tamanhos', options: ['G', 'M', 'P'] },
     { label: 'Tipo de Entrega', options: ['Entrega', 'Retirar'] },
   ];

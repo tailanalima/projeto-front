@@ -29,23 +29,23 @@ const categoryIcons = [
   { icon: <i className="pi pi-gift text-4xl"></i>, label: "Bolos" },
   { icon: <i className="pi pi-star text-4xl"></i>, label: "Brownies" },
   { icon: <i className="pi pi-sun text-4xl"></i>, label: "Dindins" },
-  { icon: <i className="pi pi-box text-4xl"></i>, label: "ConesTrufados" },
+  { icon: <i className="pi pi-box text-4xl"></i>, label: "Conestrufados" },
   { icon: <i className="pi pi-heart text-4xl"></i>, label: "Sobremesas" },
 ];
 
 const productsData = [
-  { id: 1, name: "Bolo de Pote Ninho com Nutella", image: bolodepotinho, price: 15.99, priceDiscount: 10, category: "Bolos" },
-  { id: 2, name: "Bolo de Pote de Pistache", image: bolopistache, price: 15.99, category: "Bolos", priceDiscount: 9.99 },
-  { id: 3, name: "Bolo de Pote Sensação", image: bolosensacao, price: 15.99, category: "Bolos", priceDiscount: 10 },
-  { id: 4, name: "Brownie com Doce de Leite", image: browdocedeleite, price: 13.99, category: "Brownie", priceDiscount: 7 },
-  { id: 5, name: "ChocoBrownie", image: chocobrow, price: 8, category: "Brownie" },
-  { id: 6, name: "Brownie com Pistache", image: browpistache, price: 10, category: "Brownie" },
-  { id: 7, name: "Cone Trufado Ninho com Nutella", image: conenut, price: 12.99, priceDiscount: 10, category: "ConesTrufados" },
-  { id: 8, name: "Cone Trufado de Chocolate branco", image: conebranco, price: 8, category: "ConesTrufados" },
-  { id: 9, name: "DinDin Gourmet", image: dindin, price: 2.5, category: "DinDin" },
-  { id: 10, name: "Sobremesa de Uva", image: sobreuva, price: 50, category: "Sobremesas" },
-  { id: 11, name: "Pave de Chocolate", image: pave, price: 10, category: "Sobremesas" },
-  { id: 12, name: "Brigadeiro de Pote", image: brigadeiro, price: 4, category: "Sobremesas" },
+  { id: 1,  title: "Bolo de pote de ninho com Nutella", name: "Bolo de Pote Ninho com Nutella", image: bolodepotinho, price: 15.99, priceDiscount: 10, category: "Bolos" },
+  { id: 2, title: "Bolo de Pote de Pistache", name: "Bolo de Pote de Pistache", image: bolopistache, price: 15.99, category: "Bolos", priceDiscount: 9.99 },
+  { id: 3, title: "Bolo de pote sensação", name: "Bolo de Pote Sensação", image: bolosensacao, price: 15.99, category: "Bolos", priceDiscount: 10 },
+  { id: 4, title: "Brownie de Doce de Leite", name: "Brownie com Doce de Leite", image: browdocedeleite, price: 13.99, category: "Brownie", priceDiscount: 7 },
+  { id: 5,  title: "ChocoBrownie", name: "ChocoBrownie", image: chocobrow, price: 8, category: "Brownie" },
+  { id: 6, title: "Brownie de Pistache", name: "Brownie com Pistache", image: browpistache, price: 10, category: "Brownie" },
+  { id: 7, title: "Cone Trufado Ninho com Nutela", name: "Cone Trufado Ninho com Nutella", image: conenut, price: 12.99, priceDiscount: 10, category: "Conestrufados" },
+  { id: 8, title: "Cone Trufado de Chocolate Branco", name: "Cone Trufado de Chocolate branco", image: conebranco, price: 8, category: "Conestrufados" },
+  { id: 9,  title: "DinDin Gourmet", name: "DinDin Gourmet", image: dindin, price: 2.5, category: "DinDin" },
+  { id: 10,  title: "Delicia De Uva", name: "Sobremesa de Uva", image: sobreuva, price: 50, category: "Sobremesas" },
+  { id: 11, title: "Pavê de chocolate", name: "Pave de Chocolate", image: pave, price: 10, category: "Sobremesas" },
+  { id: 12, title: "Brigadeiro de Morango", name: "Brigadeiro de Pote", image: brigadeiro, price: 4, category: "Sobremesas" },
 ];
 
 const HomePage = () => {

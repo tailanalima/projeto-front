@@ -9,12 +9,40 @@ import conebranco from '../assets/fotos/conetrufadochocolatebranco.jpg';
 import dindin from "../assets/fotos/dindingourmetdeuva.jpg";
 import sobreuva from '../assets/fotos/sobremesadeuva.jpg';
 import pave from '../assets/fotos/pavedechocolate.jpg';
+import bolonn1 from '../assets/fotos/boloninhocomnutela1.jpg';
 import brigadeiro from '../assets/fotos/brigadeironopote.jpg';
+import bolonn2 from '../assets/fotos/boloninhocomnutela2.jpg';
+import bolopistache1 from "../assets/fotos/bolopistache1.jpg";
+import bolopistache2 from "../assets/fotos/bolopistache2.jpg";
+import bolopistache3 from "../assets/fotos/bolopistache3.jpg";
+import bolosensacao1 from '../assets/fotos/bolosensacao1.jpg';
+import bolosensacao2 from '../assets/fotos/bolosensacao2.jpg';
+import bolosensacao4 from '../assets/fotos/bolosensacao4.jpg';
+import browdocedeleite1 from '../assets/fotos/browniedocedeleite1.jpg';
+import browdocedeleite2 from '../assets/fotos/brownieocedeleite2.jpg';
+import chocobrow1 from '../assets/fotos/chocobrownie1.jpg';
+import chocobrow2 from '../assets/fotos/chocobrownie2.jpg';
+import browpistache2 from '../assets/fotos/browniepistache2.jpg';
+import browpistache5 from '../assets/fotos/browniepistache5.jpg';
+import conenut1 from '../assets/fotos/coneninhocomnutela.jpg';
+import conenut3 from '../assets/fotos/coneninhocomnutela3.jpg';
+import conebranco1 from '../assets/fotos/conechocolatebranco1.jpg';
+import conebranco3 from '../assets/fotos/conechocolatebranco3.jpg';
+import dindin2 from "../assets/fotos/dindin2.jpg";
+import dindin3 from "../assets/fotos/dindin3.jpg";
+import sobreuva2 from '../assets/fotos/sobremesadeusa2.jpg';
+import sobreuva3 from '../assets/fotos/sobremesadeuva3.jpg';
+import pave2 from '../assets/fotos/pavedechocolate2.jpg';
+import pave4 from '../assets/fotos/pavedechocolate4.jpg';
+import brigadeiro1 from '../assets/fotos/brigadeironopote1.jpg';
+import brigadeiro2 from '../assets/fotos/brigadeironopote4.jpg';
+
+
 export const products = [
   {
     id: 1,
-    title: "Bolo de pote",
-    name: "Bolo de pote de ninho com nutela",
+    title: "Bolo de pote de ninho com Nutella",
+    name: "Bolo de pote de ninho com nutella",
     reference: "Ref. bolo270-BR",
     stars: 4.5,
     rating: 128,
@@ -24,8 +52,8 @@ export const products = [
     image: bolonn,
     images: [
       { src: bolonn },
-      { src: "https://imgnike-a.akamaihd.net/360x360/0163497WA1_1.jpg" },
-      { src: "https://imgnike-a.akamaihd.net/360x360/0163497WA1_2.jpg" }
+      { src: bolonn1 },
+      { src: bolonn2 }
     ],
     category: "Bolos",
     gender: "P",
@@ -46,9 +74,9 @@ export const products = [
     description: "Um Bolo Maravilho com sabor de pistache",
     image: bolopistache,
     images: [
-      { src: bolopistache },
-      { src: "https://imgadidas-a.akamaihd.net/360x360/0163498WA1_1.jpg" },
-      { src: "https://imgadidas-a.akamaihd.net/360x360/0163498WA1_2.jpg" }
+      { src: bolopistache1 },
+      { src: bolopistache2 },
+      { src: bolopistache3 }
     ],
     category: "Bolos",
     gender: "P",
@@ -69,9 +97,9 @@ export const products = [
     description: "Bolo de bote delicioso sabor Chocolate com Morango.",
     image: bolosensacao,
     images: [
-      { src: bolosensacao },
-      { src: "https://imgpuma-a.akamaihd.net/360x360/0163499WA1_1.jpg" },
-      { src: "https://imgpuma-a.akamaihd.net/360x360/0163499WA1_2.jpg" }
+      { src: bolosensacao1 },
+      { src: bolosensacao2 },
+      { src: bolosensacao4 }
     ],
     category: "Bolos",
     gender: "P",
@@ -93,8 +121,8 @@ export const products = [
     image: browdocedeleite,
     images: [
       { src: browdocedeleite },
-      { src: "https://imgnewbalance-a.akamaihd.net/360x360/0163500WA1_1.jpg" },
-      { src: "https://imgnewbalance-a.akamaihd.net/360x360/0163500WA1_2.jpg" }
+      { src: browdocedeleite1 },
+      { src: browdocedeleite2 }
     ],
     category: "Brownies",
     gender: "M",
@@ -116,8 +144,8 @@ export const products = [
     image: chocobrow,
     images: [
       { src: chocobrow },
-      { src: "https://imgasics-a.akamaihd.net/360x360/0163501WA1_1.jpg" },
-      { src: "https://imgasics-a.akamaihd.net/360x360/0163501WA1_2.jpg" }
+      { src: chocobrow1 },
+      { src: chocobrow2 }
     ],
     category: "Brownies",
     gender: "M",
@@ -139,8 +167,8 @@ export const products = [
     image: browpistache,
     images: [
       { src: browpistache},
-      { src: "https://imgreebok-a.akamaihd.net/360x360/0163502WA1_1.jpg" },
-      { src: "https://imgreebok-a.akamaihd.net/360x360/0163502WA1_2.jpg" }
+      { src: browpistache2 },
+      { src: browpistache5 }
     ],
     category: "Brownies",
     gender: "M",
@@ -162,10 +190,10 @@ export const products = [
     image: conenut,
     images: [
       { src: conenut },
-      { src: "https://imgvans-a.akamaihd.net/360x360/0163503WA1_1.jpg" },
-      { src: "https://imgvans-a.akamaihd.net/360x360/0163503WA1_2.jpg" }
+      { src: conenut1 },
+      { src: conenut3 }
     ],
-    category: "ConesTrufados",
+    category: "Conestrufados",
     gender: "M",
     condition: "Entrega",
     brand: "Ninho+Nutela",
@@ -185,10 +213,10 @@ export const products = [
     image: conebranco,
     images: [
       { src: conebranco },
-      { src: "https://imgconverse-a.akamaihd.net/360x360/0163504WA1_1.jpg" },
-      { src: "https://imgconverse-a.akamaihd.net/360x360/0163504WA1_2.jpg" }
+      { src: conebranco1 },
+      { src: conebranco3 }
     ],
-    category: "ConesTrufados",
+    category: "Conestrufados",
     gender: "M",
     condition: "Entrega",
     brand: "ChocoBranco",
@@ -208,8 +236,8 @@ export const products = [
     image: dindin,
     images: [
         { src: dindin },
-        { src: "https://exemplo.com/camisa_costas.jpg" },
-        { src: "https://exemplo.com/camisa_detalhe.jpg" }
+        { src: dindin2 },
+        { src: dindin3 }
     ],
     category: "Dindins",
     gender: "P",
@@ -231,8 +259,8 @@ export const products = [
     image: sobreuva,
     images: [
         { src: sobreuva },
-        { src: "https://exemplo.com/calca_costas.jpg" },
-        { src: "https://exemplo.com/calca_detalhe.jpg" }
+        { src: sobreuva2 },
+        { src: sobreuva3 }
     ],
     category: "Sobremesas",
     gender: "G",
@@ -254,8 +282,8 @@ export const products = [
     image: pave,
     images: [
         { src: pave },
-        { src: "https://exemplo.com/bone_lado.jpg" },
-        { src: "https://exemplo.com/bone_tras.jpg" }
+        { src: pave2 },
+        { src: pave4 }
     ],
     category: "Sobremesas",
     gender: "M",
@@ -277,8 +305,8 @@ export const products = [
     image: brigadeiro,
     images: [
         { src: brigadeiro },
-        { src: "https://exemplo.com/headphone_lado.jpg" },
-        { src: "https://exemplo.com/headphone_dobrado.jpg" }
+        { src: brigadeiro1 },
+        { src: brigadeiro2 }
     ],
     category: "Sobremesas",
     gender: "P",
