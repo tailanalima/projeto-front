@@ -22,10 +22,10 @@ const location = useLocation();
   });
 
   const allFilters = [
-    { label: 'Marca', options: ['Adidas', 'Balenciaga', 'K-Swiss', 'Nike', 'Puma', 'Stamp', 'OQVestir', 'JBL', 'MST'] },
-    { label: 'Categoria', options: ['Camisetas', 'Calças', 'Bonés', 'Headphones', 'Tênis'] },
-    { label: 'Gênero', options: ['Masculino', 'Feminino', 'Unisex'] },
-    { label: 'Estado', options: ['Novo', 'Usado'] },
+    { label: 'Sabores', options: ['Chocolate', 'Ninho', 'Uva', 'Pistache', 'Nutela', 'DoceDeLeite', 'ChocoBranco', 'Sensação', 'Outros'] },
+    { label: 'Categoria', options: ['Bolos', 'Brownies', 'DinDins', 'Cones Trufados', 'Sobremesas'] },
+    { label: 'Tamanhos', options: ['G', 'M', 'P'] },
+    { label: 'Tipo de Entrega', options: ['Entraga', 'Retirar'] },
   ];
 
   const handleFilterChange = (value) => {

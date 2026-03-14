@@ -1,8 +1,9 @@
-import Logo from './logo';
+
 import SearchBar from './searchBar';
 import AuthLinks from './authLinks';
 import MainNav from './mainNave';
 import CartIcon from './cartIcon'; 
+import Logo from './logo';
 
 const Header = () => {
   return (

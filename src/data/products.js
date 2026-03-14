@@ -1,25 +1,26 @@
+import bolonn from "../assets/fotos/bolodepoteninhocomnutela.jpg";
 export const products = [
   {
     id: 1,
-    title: "Nike Air Max 270",
-    name: "Nike Air Max 270",
-    reference: "Ref. NIKE270-BR",
+    title: "Bolo de pote",
+    name: "Bolo de pote de ninho com nutela",
+    reference: "Ref. bolo270-BR",
     stars: 4.5,
     rating: 128,
     price: 299.99,
     priceDiscount: 209.99,
-    description: "Tênis Nike confortável e estiloso.",
-    image: "https://images-na.ssl-images-amazon.com/images/I/717fbeslx0L._AC_SR462,693_.jpg",
+    description: "Bolo bom e Gostoso.",
+    image: bolonn,
     images: [
-      { src: "https://imgnike-a.akamaihd.net/360x360/0163497WA1.jpg" },
+      { src: bolonn },
       { src: "https://imgnike-a.akamaihd.net/360x360/0163497WA1_1.jpg" },
       { src: "https://imgnike-a.akamaihd.net/360x360/0163497WA1_2.jpg" }
     ],
-    category: "Tênis",
-    gender: "Unissex",
-    condition: "Novo",
-    brand: "Nike",
-    sizes: [38, 39, 40, 41, 42],
+    category: "Bolos",
+    gender: "P",
+    condition: "Entrega",
+    brand: "Ninho",
+    sizes: [1,2,3],
     colors: ["#000000", "#FFFFFF"],
     relatedProducts: [2, 3, 4]
   },

@@ -1,4 +1,4 @@
-import LogoFooter from '../assets/logo-footer.svg';
+import logo from "../assets/fotos/logo.jpg"
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
         <div>
-          <img src={LogoFooter} alt="Drip Store Logo" className="h-8 mb-4" />
+          <img src={logo} alt="Imperio doces Logo" className="h-8 mb-4" />
           <p className="text-sm text-gray-400 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            Onde fica esse texto eu n sei
           </p>
           <div className="flex space-x-4">
             <FaFacebookF className="text-white hover:text-pink-600 cursor-pointer" />
@@ -33,25 +33,25 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-4">Categorias</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><a href="#">Doces</a></li>
             <li><a href="#">Bolos</a></li>
-            <li><a href="#">Tortas</a></li>
-            <li><a href="#">Sobremesas</a></li>
+            <li><a href="#">Brownies</a></li>
             <li><a href="#">Dindins</a></li>
+            <li><a href="#">Cones Trufados</a></li>
+            <li><a href="#">Sobremesas</a></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold mb-4">Contato</h3>
           <p className="text-sm text-gray-400 leading-relaxed">
-            Entrada da favela, 69 - Casa humilde - São joaquim, Umirim - CE, Brasil
+            Rua do Engenho, 69 - Em frente ao Heully - São joaquim, Umirim - CE, Brasil
           </p>
           <p className="text-sm text-gray-400 mt-2">(85) 981169050</p>
         </div>
       </div>.
 
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-xs text-gray-500">
-        © 2026 Louro josé And Eva nice
+        © 2026 Império Doces
       </div>
     </footer>
   );

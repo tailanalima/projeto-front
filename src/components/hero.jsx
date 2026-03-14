@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import fireIcon from '../assets/fire.png';
 import dotsImage from '../assets/dots.png';
-import sneakerImage from '../assets/White-Sneakers-PNG.png';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import bolochocotudo from "../assets/fotos/bolochocotudo.jpg";
+import conetrufapascoa from "..//assets/fotos/conetrufadopascoa.jpg";
+import brownie from "..//assets/fotos/sanduichedebrowniechocotudo.jpg";
+import pave from "../assets/fotos/pavedechocolate.jpg";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,24 +13,24 @@ const Hero = () => {
 
   const slides = [
     {
-      title: '',
-      description: 'Descontos imperdíveis em tênis Nike para você renovar seu estilo.',
-      image: sneakerImage,
+      title: 'Bolos no precinho',
+      description: 'Descontos imperdíveis em Bolos de potes.',
+      image: bolochocotudo,
     },
     {
-      title: 'Novidades Adidas',
-      description: 'Conheça os lançamentos mais estilosos da Adidas.',
-      image: sneakerImage,
+      title: 'Novidades Pascoá',
+      description: 'Conheça os lançamentos Da Pascoá.',
+      image: conetrufapascoa,
     },
     {
-      title: 'Tênis em Alta',
-      description: 'Os modelos mais procurados com descontos especiais.',
-      image: sneakerImage,
+      title: 'brownie em Alta',
+      description: 'Os Doces mais procurados com descontos especiais.',
+      image: brownie,
     },
     {
       title: 'Promoção Relâmpago',
-      description: 'Só hoje: até 60% off em diversas marcas!',
-      image: sneakerImage,
+      description: 'Só hoje: até 60% off em diversos Doces!',
+      image: pave,
     },
   ];
 
@@ -65,12 +67,9 @@ const Hero = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-neutral-900 leading-snug mb-6">
           Queima de Estoque{' '}
           <span className="inline-flex items-center gap-2">
-          Nike
-            <img
-              src={fireIcon}
-              alt="Ícone de fogo"
-              className="w-16 h-16 md:w-19 md:h-18 inline-block"
-            />
+          Bolo
+            
+            
           </span>
         </h1>
 
@@ -93,11 +92,6 @@ const Hero = () => {
             className="w-full object-contain drop-shadow-xl transition-all duration-300"
           />
 
-          <img
-            src={dotsImage}
-            alt="Pontinhos decorativos"
-            className="hidden md:block absolute right-[-40px] top-[10%] w-[140px] h-[140px] pointer-events-none"
-          />
         </div>
       </div>
 
