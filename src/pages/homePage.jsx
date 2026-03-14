@@ -58,7 +58,13 @@ const HomePage = () => {
     if (!selectedCategory) {
       return productsData;
     }
-    return productsData.filter(product => product.category === selectedCategory);
+    return productsData.filter(product => {
+      // Normaliza para ignorar maiúsculas, minúsculas e o "s" no final
+      const pCat = product.category.toLowerCase().trim().replace(/s$/, '');
+      const sCat = selectedCategory.toLowerCase().trim().replace(/s$/, '');
+      
+      return pCat === sCat;
+    });
   }, [selectedCategory]);
 
   const handleCategoryClick = (categoryLabel) => {
@@ -84,20 +90,28 @@ const HomePage = () => {
         </h2>
 
         <div className="grid sm:grid-cols-4 md:grid-cols-3 gap-3 px-2 md:px-20 lg:px-40 xl:px-58">
-         {[
-  sanduicheBrownieChocotudo,
-  sanduicheBrownieDoceDeLeite,
-  sanduicheBrownieNinho
-].map((image, index) => (
-            <div key={index} className="relative overflow-visible bg-white rounded-xl shadow aspect-square">
-              <img src={image} alt={`Coleção ${index + 1}`} className="w-full h-full object-contain p-4" />
-              <div className="absolute top-2 left-4 bg-lime-200 text-[12px] font-bold text-gray-900 px-3 py-[3px] rounded-full z-10">30% OFF</div>
-              <div className="absolute bottom-6 left-4 z-10">
-                <button onClick={goToProducts} className="bg-white text-pink-600 text-sm font-semibold px-6 py-2 rounded-md shadow hover:bg-pink-100 transition">Comprar</button>
-              </div>
-            </div>
-          ))}
-        </div>
+  {[
+    sanduicheBrownieChocotudo,
+    sanduicheBrownieDoceDeLeite,
+    sanduicheBrownieNinho
+  ].map((image, index) => (
+    <div key={index} className="relative overflow-visible bg-white rounded-xl shadow aspect-square">
+      <img src={image} alt={`Coleção ${index + 1}`} className="w-full h-full object-contain p-4" />
+      <div className="absolute top-2 left-4 bg-lime-200 text-[12px] font-bold text-gray-900 px-3 py-[3px] rounded-full z-10">
+        30% OFF
+      </div>
+      <div className="absolute bottom-6 left-4 z-10">
+        {/* Aqui mudamos o onClick para levar para a página de esgotado */}
+        <button 
+          onClick={() => navigate('/esgotado')} 
+          className="bg-white text-pink-600 text-sm font-semibold px-6 py-2 rounded-md shadow hover:bg-pink-100 transition"
+        >
+          Comprar
+        </button>
+      </div>
+    </div>
+  ))}
+</div>
 
         <Section>
           <div className="flex justify-center gap-6 flex-wrap px-4 md:px-0 mt-10">

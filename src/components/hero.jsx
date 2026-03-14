@@ -19,7 +19,7 @@ const Hero = () => {
     },
     {
       title: 'Novidades Páscoa',
-      description: 'Conheça os lançamentos Da Pascoá.',
+      description: 'Conheça os lançamentos Da Páscoa.',
       image: conetrufapascoa,
     },
     {
@@ -65,7 +65,7 @@ const Hero = () => {
           </p>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-neutral-900 leading-snug mb-6">
-          Os Queridinhos em{' '}
+          Os Queridinhos da Império Doces em{' '}
           <span className="inline-flex items-center gap-2">
           Oferta!
             

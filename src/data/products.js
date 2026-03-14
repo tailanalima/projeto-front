@@ -110,8 +110,8 @@ export const products = [
   },
   {
     id: 4,
-    title: "Brownie de Doce de Leite",
-    name: "Brownie sabor doce de leite",
+    title: "Brownies de Doce de Leite",
+    name: "Brownies sabor doce de leite",
     reference: "Ref. Brow1-BR",
     stars: 4.6,
     rating: 180,
@@ -133,7 +133,7 @@ export const products = [
   },
   {
     id: 5,
-    title: "ChocoBrownie",
+    title: "ChocoBrownies",
     name: "Brownie Sabor chocolate",
     reference: "Ref. Browc-BR",
     stars: 4.8,
@@ -156,8 +156,8 @@ export const products = [
   },
   {
     id: 6,
-    title: "Brownie de Pistache",
-    name: "Brownie Sabor pistache",
+    title: "Brownies de Pistache",
+    name: "Brownies Sabor pistache",
     reference: "Ref. Browpi-BR",
     stars: 4.4,
     rating: 170,
@@ -225,8 +225,8 @@ export const products = [
   },
   {
     id: 9,
-    title: "DinDin Gourmet",
-    name: "DinDin Gourmet sabor uva",
+    title: "Dindins Gourmet",
+    name: "Dindins Gourmet sabor uva",
     reference: "Ref. Uvadin-BR",
     stars: 4.9,
     rating: 95,
@@ -295,7 +295,7 @@ export const products = [
   {
     id: 12,
     title: "Brigadeiro de Morango",
-    name: "Bricadeiro de Morango",
+    name: "Brigadeiro de Morango",
     reference: "Ref. bbm-BR",
     stars: 4.9,
     rating: 540,

@@ -11,7 +11,7 @@ import CompletarCadastro from './pages/completarCadastro';
 import Login from './pages/login';
 import Cadastro from './pages/cadastro';
 import NotFound from './pages/NotFound';
-
+import ProdutoEsgotado from './pages/esgotado';
 
 function App() {
   return (
@@ -25,8 +25,11 @@ function App() {
 
           {/* 2. Adicione as novas rotas aqui para corresponder aos seus links */}
           <Route path="login" element={<Login />} />
-          <Route path="register" element={<Cadastro />} /> 
+          <Route path="register" element={<Cadastro />} />
+          <Route path="/esgotado" element={<ProdutoEsgotado />} /> 
           <Route path="*" element={<NotFound />} />
+      
+          
           {/* Note que usamos "register" no path para bater com seu componente AuthLinks.jsx */}
           <Route path="completar-cadastro" element={<CompletarCadastro />} />
         </Route>
