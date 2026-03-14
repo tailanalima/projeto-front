@@ -10,6 +10,7 @@ import CompletarCadastro from './pages/completarCadastro';
 // 1. Importe as duas novas páginas que você acabou de criar
 import Login from './pages/login';
 import Cadastro from './pages/cadastro';
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           {/* 2. Adicione as novas rotas aqui para corresponder aos seus links */}
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Cadastro />} /> 
+          <Route path="*" element={<NotFound />} />
           {/* Note que usamos "register" no path para bater com seu componente AuthLinks.jsx */}
           <Route path="completar-cadastro" element={<CompletarCadastro />} />
         </Route>

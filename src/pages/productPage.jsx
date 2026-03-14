@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'; 
+import { useState, useMemo, useEffect } from 'react'; 
 import { products } from '../data/products';
 import ProductListingList from '../components/AbaProdutos/productListingList';
 import { Link, useLocation } from 'react-router-dom';
@@ -20,6 +20,20 @@ const location = useLocation();
     }
     return [];
   });
+
+  // Sincroniza os filtros com a URL toda vez que o parâmetro 'categoria' mudar
+useEffect(() => {
+  if (categoryFromUrl) {
+    // Transforma "bolos" em "Bolos" para bater com o filtro lateral
+    const formattedCategory = categoryFromUrl.charAt(0).toUpperCase() + categoryFromUrl.slice(1).toLowerCase();
+    
+    // Define o filtro como a categoria que veio da URL
+    setFilters([formattedCategory]);
+  } else {
+    // Se não houver categoria na URL (ex: clicou em "Todos"), limpa os filtros
+    setFilters([]);
+  }
+}, [categoryFromUrl]); // <--- Monitora a URL aqui
 
   const allFilters = [
     { label: 'Sabores', options: ['Chocolate', 'Ninho+Nutela', 'Uva', 'Pistache', 'Morango', 'DoceDeLeite', 'ChocoBranco', 'Sensação', 'Outros'] },

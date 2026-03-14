@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from "../assets/fotos/logo.jpg"
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
@@ -31,27 +32,47 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="font-semibold mb-4">Informação</h3>
-          <ul className="space-y-2 text-sm text-gray-400">
-            <li><a href="#">Sobre Império Doces</a></li>
-            <li><a href="#">Segurança</a></li>
-            <li><a href="#">Wishlist</a></li>
-      
-            <li><a href="#">Trabalhe conosco</a></li>
-            <li><a href="#">Meus Pedidos</a></li>
-          </ul>
-        </div>
+  <h3 className="font-semibold mb-4 text-white">Informação</h3>
+  <ul className="space-y-2 text-sm text-gray-400">
+    <li><Link to="/sobre" className="hover:text-pink-600 transition">Sobre Império Doces</Link></li>
+    <li><Link to="/seguranca" className="hover:text-pink-600 transition">Segurança</Link></li>
+    <li><Link to="/wishlist" className="hover:text-pink-600 transition">Wishlist</Link></li>
+    <li><Link to="/trabalhe-conosco" className="hover:text-pink-600 transition">Trabalhe conosco</Link></li>
+    <li><Link to="/pedidos" className="hover:text-pink-600 transition">Meus Pedidos</Link></li>
+  </ul>
+</div>
 
         <div>
-          <h3 className="font-semibold mb-4">Categorias</h3>
-          <ul className="space-y-2 text-sm text-gray-400">
-            <li><a href="#">Bolos</a></li>
-            <li><a href="#">Brownies</a></li>
-            <li><a href="#">Dindins</a></li>
-            <li><a href="#">ConesTrufados</a></li>
-            <li><a href="#">Sobremesas</a></li>
-          </ul>
-        </div>
+  <h3 className="font-semibold mb-4 text-white">Categorias</h3>
+  <ul className="space-y-2 text-sm text-gray-400">
+    {/* O "to" deve bater exatamente com os nomes que você definiu no array de categorias */}
+    <li>
+      <Link to="/produtos?categoria=Bolos" className="hover:text-pink-600 transition">
+        Bolos
+      </Link>
+    </li>
+    <li>
+      <Link to="/produtos?categoria=Brownies" className="hover:text-pink-600 transition">
+        Brownies
+      </Link>
+    </li>
+    <li>
+      <Link to="/produtos?categoria=Dindins" className="hover:text-pink-600 transition">
+        Dindins
+      </Link>
+    </li>
+    <li>
+      <Link to="/produtos?categoria=ConesTrufados" className="hover:text-pink-600 transition">
+        Cones Trufados
+      </Link>
+    </li>
+    <li>
+      <Link to="/produtos?categoria=Sobremesas" className="hover:text-pink-600 transition">
+        Sobremesas
+      </Link>
+    </li>
+  </ul>
+</div>
 
         <div>
           <h3 className="font-semibold mb-4">Contato</h3>

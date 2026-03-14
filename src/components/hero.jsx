@@ -14,16 +14,16 @@ const Hero = () => {
   const slides = [
     {
       title: 'Bolos no precinho',
-      description: 'Descontos imperdíveis em Bolos de potes.',
+      description: 'Descontos imperdíveis em Bolos de pote.',
       image: bolochocotudo,
     },
     {
-      title: 'Novidades Pascoá',
+      title: 'Novidades Páscoa',
       description: 'Conheça os lançamentos Da Pascoá.',
       image: conetrufapascoa,
     },
     {
-      title: 'brownie em Alta',
+      title: 'Brownie em Alta',
       description: 'Os Doces mais procurados com descontos especiais.',
       image: brownie,
     },
@@ -65,9 +65,9 @@ const Hero = () => {
           </p>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-neutral-900 leading-snug mb-6">
-          Queima de Estoque{' '}
+          Os Queridinhos em{' '}
           <span className="inline-flex items-center gap-2">
-          Bolo
+          Oferta!
             
             
           </span>
