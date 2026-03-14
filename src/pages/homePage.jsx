@@ -29,7 +29,7 @@ const categoryIcons = [
   { icon: <i className="pi pi-gift text-4xl"></i>, label: "Bolos" },
   { icon: <i className="pi pi-star text-4xl"></i>, label: "Brownies" },
   { icon: <i className="pi pi-sun text-4xl"></i>, label: "Dindins" },
-  { icon: <i className="pi pi-box text-4xl"></i>, label: "Cones Trufados" },
+  { icon: <i className="pi pi-box text-4xl"></i>, label: "ConesTrufados" },
   { icon: <i className="pi pi-heart text-4xl"></i>, label: "Sobremesas" },
 ];
 
@@ -40,8 +40,8 @@ const productsData = [
   { id: 4, name: "Brownie com Doce de Leite", image: browdocedeleite, price: 13.99, category: "Brownie", priceDiscount: 7 },
   { id: 5, name: "ChocoBrownie", image: chocobrow, price: 8, category: "Brownie" },
   { id: 6, name: "Brownie com Pistache", image: browpistache, price: 10, category: "Brownie" },
-  { id: 7, name: "Cone Trufado Ninho com Nutella", image: conenut, price: 12.99, priceDiscount: 10, category: "Cones Trufados" },
-  { id: 8, name: "Cone Trufado de Chocolate branco", image: conebranco, price: 8, category: "Cones Trufados" },
+  { id: 7, name: "Cone Trufado Ninho com Nutella", image: conenut, price: 12.99, priceDiscount: 10, category: "ConesTrufados" },
+  { id: 8, name: "Cone Trufado de Chocolate branco", image: conebranco, price: 8, category: "ConesTrufados" },
   { id: 9, name: "DinDin Gourmet", image: dindin, price: 2.5, category: "DinDin" },
   { id: 10, name: "Sobremesa de Uva", image: sobreuva, price: 50, category: "Sobremesas" },
   { id: 11, name: "Pave de Chocolate", image: pave, price: 10, category: "Sobremesas" },

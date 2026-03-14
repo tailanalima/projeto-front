@@ -22,8 +22,8 @@ const location = useLocation();
   });
 
   const allFilters = [
-    { label: 'Sabores', options: ['Chocolate', 'Ninho', 'Uva', 'Pistache', 'Nutela', 'DoceDeLeite', 'ChocoBranco', 'Sensação', 'Outros'] },
-    { label: 'Categoria', options: ['Bolos', 'Brownies', 'Dindins', 'Cones Trufados', 'Sobremesas'] },
+    { label: 'Sabores', options: ['Chocolate', 'Ninho+Nutela', 'Uva', 'Pistache', 'Morango', 'DoceDeLeite', 'ChocoBranco', 'Sensação', 'Outros'] },
+    { label: 'Categoria', options: ['Bolos', 'Brownies', 'Dindins', 'ConesTrufados', 'Sobremesas'] },
     { label: 'Tamanhos', options: ['G', 'M', 'P'] },
     { label: 'Tipo de Entrega', options: ['Entrega', 'Retirar'] },
   ];
