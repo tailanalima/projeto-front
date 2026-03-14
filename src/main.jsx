@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import { CartProvider } from './contexts/cartContext';
 import App from './App';
+import 'primeicons/primeicons.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

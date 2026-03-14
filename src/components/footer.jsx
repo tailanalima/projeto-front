@@ -9,13 +9,25 @@ const Footer = () => {
         <div>
           <img src={logo} alt="Imperio doces Logo" className="h-8 mb-4" />
           <p className="text-sm text-gray-400 mb-4">
-            Onde fica esse texto eu n sei
+            "Onde cada receita é feita para transformar pequenos momentos em grandes alegrias.”
           </p>
-          <div className="flex space-x-4">
-            <FaFacebookF className="text-white hover:text-pink-600 cursor-pointer" />
-            <FaInstagram className="text-white hover:text-pink-600 cursor-pointer" />
-            <FaTwitter className="text-white hover:text-pink-600 cursor-pointer" />
-          </div>
+         <div className="flex space-x-4">
+  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <FaFacebookF className="text-white hover:text-pink-600 cursor-pointer" />
+  </a>
+
+  <a 
+    href="https://www.instagram.com/imperio.doces.f_e?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaInstagram className="text-white hover:text-pink-600 cursor-pointer" />
+  </a>
+
+  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+    <FaTwitter className="text-white hover:text-pink-600 cursor-pointer" />
+  </a>
+</div>
         </div>
 
         <div>
@@ -24,7 +36,7 @@ const Footer = () => {
             <li><a href="#">Sobre Império Doces</a></li>
             <li><a href="#">Segurança</a></li>
             <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Site</a></li>
+      
             <li><a href="#">Trabalhe conosco</a></li>
             <li><a href="#">Meus Pedidos</a></li>
           </ul>
@@ -44,7 +56,7 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-4">Contato</h3>
           <p className="text-sm text-gray-400 leading-relaxed">
-            Rua do Engenho, 69 - Em frente ao Heully - São joaquim, Umirim - CE, Brasil
+            Rua Expedito de Brito,18 - São Joaquim, Umirim - CE, Brasil
           </p>
           <p className="text-sm text-gray-400 mt-2">(85) 981169050</p>
         </div>

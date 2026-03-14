@@ -20,30 +20,32 @@ import sobreuva from '../assets/fotos/sobremesadeuva.jpg';
 import pave from '../assets/fotos/pavedechocolate.jpg';
 import brigadeiro from '../assets/fotos/brigadeironopote.jpg';
 import conenatal from '../assets/fotos/conetrufadonatal.jpg';
-
+import sanduicheBrownieChocotudo from "../assets/fotos/sanduichedebrowniechocotudo.jpg"
+import sanduicheBrownieDoceDeLeite from "../assets/fotos/sanduichedebrowniededocedeleite.jpg"
+import sanduicheBrownieNinho from "../assets/fotos/sanduichedebrowniedeninho.jpg"
 
 
 const categoryIcons = [
-  { icon: <IoShirtOutline size={40} />, label: "Bolos" },
-  { icon: <PiPantsLight size={40} />, label: "Brownies" },
-  { icon: <PiBaseballCapLight size={40} />, label: "Dindins" },
-  { icon: <PiHeadphonesLight size={40} />, label: "Cones Trufados" },
-  { icon: <GiConverseShoe size={40} />, label: "Sobremesas" },
+  { icon: <i className="pi pi-gift text-4xl"></i>, label: "Bolos" },
+  { icon: <i className="pi pi-star text-4xl"></i>, label: "Brownies" },
+  { icon: <i className="pi pi-sun text-4xl"></i>, label: "Dindins" },
+  { icon: <i className="pi pi-box text-4xl"></i>, label: "Cones Trufados" },
+  { icon: <i className="pi pi-heart text-4xl"></i>, label: "Sobremesas" },
 ];
 
 const productsData = [
-  { id: 1, name: "Bolo de pote ninho com nutella", image: bolodepotinho, price: 200, priceDiscount: 149.9, category: "Bolos" },
-  { id: 2, name: "Bolo de pote de pistache", image: bolopistache, price: 200, category: "Bolos", priceDiscount: 180 },
-  { id: 3, name: "Bolo de pote sensacao", image: bolosensacao, price: 99.9, category: "Bolos", priceDiscount: 89.9 },
-  { id: 4, name: "Brownie com doce de leite", image: browdocedeleite, price: 150, category: "Brownie", priceDiscount: 120 },
-  { id: 5, name: "ChocoBrownie", image: chocobrow, price: 75, category: "Brownie" },
-  { id: 6, name: "Brownie de pistache", image: browpistache, price: 30, category: "Brownie" },
-  { id: 7, name: "Cone Trufado ninho com nutella", image: conenut, price: 200, priceDiscount: 180, category: "Cones Trufados" },
-  { id: 8, name: "Cone Trufado de chocolate branco", image: conebranco, price: 250, category: "Cones Trufados" },
-  { id: 9, name: "DinDin Goumet sabor uva", image: dindin, price: 100, category: "DinDin" },
-  { id: 10, name: "Sobremesa de uva", image: sobreuva, price: 400, category: "Sobremesas" },
-  { id: 11, name: "Pave de chocolate", image: pave, price: 200, category: "Sobremesas" },
-  { id: 12, name: "Brigadeiro de pote", image: brigadeiro, price: 299, category: "Sobremesas" },
+  { id: 1, name: "Bolo de Pote Ninho com Nutella", image: bolodepotinho, price: 15.99, priceDiscount: 10, category: "Bolos" },
+  { id: 2, name: "Bolo de Pote de Pistache", image: bolopistache, price: 15.99, category: "Bolos", priceDiscount: 9.99 },
+  { id: 3, name: "Bolo de Pote Sensação", image: bolosensacao, price: 15.99, category: "Bolos", priceDiscount: 10 },
+  { id: 4, name: "Brownie com Doce de Leite", image: browdocedeleite, price: 13.99, category: "Brownie", priceDiscount: 7 },
+  { id: 5, name: "ChocoBrownie", image: chocobrow, price: 8, category: "Brownie" },
+  { id: 6, name: "Brownie com Pistache", image: browpistache, price: 10, category: "Brownie" },
+  { id: 7, name: "Cone Trufado Ninho com Nutella", image: conenut, price: 12.99, priceDiscount: 10, category: "Cones Trufados" },
+  { id: 8, name: "Cone Trufado de Chocolate branco", image: conebranco, price: 8, category: "Cones Trufados" },
+  { id: 9, name: "DinDin Gourmet", image: dindin, price: 2.5, category: "DinDin" },
+  { id: 10, name: "Sobremesa de Uva", image: sobreuva, price: 50, category: "Sobremesas" },
+  { id: 11, name: "Pave de Chocolate", image: pave, price: 10, category: "Sobremesas" },
+  { id: 12, name: "Brigadeiro de Pote", image: brigadeiro, price: 4, category: "Sobremesas" },
 ];
 
 const HomePage = () => {
@@ -78,11 +80,15 @@ const HomePage = () => {
 
       <div className="bg-[#f6f6f6] pb-20 pt-10">
         <h2 className="text-2xl font-semibold text-gray-700 px-2 md:px-20 lg:px-40 xl:px-58 mb-6">
-          Coleções em destaque:
+          Sobremesas em destaque:
         </h2>
 
         <div className="grid sm:grid-cols-4 md:grid-cols-3 gap-3 px-2 md:px-20 lg:px-40 xl:px-58">
-          {[ "/assets/fotos/logo.jpg", "/assets/fotos/logo.jpg", "/assets/fotos/logo.jpg" ].map((image, index) => (
+         {[
+  sanduicheBrownieChocotudo,
+  sanduicheBrownieDoceDeLeite,
+  sanduicheBrownieNinho
+].map((image, index) => (
             <div key={index} className="relative overflow-visible bg-white rounded-xl shadow aspect-square">
               <img src={image} alt={`Coleção ${index + 1}`} className="w-full h-full object-contain p-4" />
               <div className="absolute top-2 left-4 bg-lime-200 text-[12px] font-bold text-gray-900 px-3 py-[3px] rounded-full z-10">30% OFF</div>
