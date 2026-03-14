@@ -18,7 +18,7 @@ const categorias = [
     imagem: duva,
   },
   {
-    nome: 'Cones trufados',
+    nome: 'Cones Trufados',
     imagem: coneninho,
   },
   {
