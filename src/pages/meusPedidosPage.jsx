@@ -32,7 +32,7 @@ const MeusPedidosPage = () => {
 
   const total = cartItems.reduce((sum, item) => {
     if (!item || typeof item.price !== 'number') return sum;
-    return sum + item.price * 0.7; // com desconto de 30%
+    return sum + item.price * 0.8; // com desconto de 30%
   }, 0);
 
   return (
@@ -57,7 +57,7 @@ const MeusPedidosPage = () => {
                   <p className="font-medium">{item?.title || "Produto sem título"}</p>
                   <p className="text-sm text-gray-500">{item?.category || "Categoria desconhecida"}</p>
                   <span className="font-bold text-primary">
-                    R${item?.price ? (item.price * 0.7).toFixed(2) : "0.00"}
+                    R${item?.price ? (item.price).toFixed(2) : "0.00"}
                   </span>
                 </div>
                 <button
