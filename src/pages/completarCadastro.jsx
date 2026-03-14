@@ -95,7 +95,7 @@ const CompletarCadastro = () => {
           <div className="pt-4">
             <label className="flex items-center">
               <input type="checkbox" name="receberEmails" checked={formData.receberEmails} onChange={handleChange} className="h-4 w-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500" />
-              <span className="ml-2 text-sm text-gray-600">Quero receber por email ofertas e novidades das lojas da Digital Store.</span>
+              <span className="ml-2 text-sm text-gray-600">Quero receber por email ofertas e novidades da Império Doces.</span>
             </label>
           </div>
 

@@ -110,13 +110,7 @@ const Login = () => {
             </form>
           </div>
 
-          <div className="hidden md:flex justify-center items-center">
-            <img 
-              src="/tenis-login-2.PNG"  
-              alt="Tênis decorativo" 
-              className="max-w-lg w-full drop-shadow-2xl"
-            />
-          </div>
+          
         </div>
       </div>
     </div>
