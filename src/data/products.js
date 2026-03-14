@@ -1,4 +1,16 @@
 import bolonn from "../assets/fotos/bolodepoteninhocomnutela.jpg";
+import bolopistache from "../assets/fotos/bolodepotepistache.jpg";
+import bolosensacao from '../assets/fotos/bolodepotesensacao.jpg';
+import browdocedeleite from '../assets/fotos/browniecomdocedeleite.jpg';
+import chocobrow from '../assets/fotos/chocobrownie.jpg';
+import browpistache from '../assets/fotos/sanduichedebrowniedepistache.jpg';
+import conenut from '../assets/fotos/conetrufadoninhocomnutela.jpg';
+import conebranco from '../assets/fotos/conetrufadochocolatebranco.jpg';
+import dindin from "../assets/fotos/dindingourmetdeuva.jpg";
+import sobreuva from '../assets/fotos/sobremesadeuva.jpg';
+import pave from '../assets/fotos/pavedechocolate.jpg';
+import brigadeiro from '../assets/fotos/brigadeironopote.jpg';
+import conenatal from '../assets/fotos/conetrufadonatal.jpg';
 export const products = [
   {
     id: 1,
@@ -26,15 +38,15 @@ export const products = [
   },
   {
     id: 2,
-    title: "Adidas Ultraboost",
-    name: "Adidas Ultraboost",
-    reference: "Ref. ADIDASUB-BR",
+    title: "Bolo de Pote de Pistache",
+    name: "Bolo de Pistache",
+    reference: "Ref. Bolo271-BR",
     stars: 4.7,
     rating: 200,
     price: 349.99,
     priceDiscount: 249.99,
-    description: "Tênis Adidas com tecnologia de amortecimento.",
-    image: "https://authenticfeet.vtexassets.com/arquivos/ids/434723-800-800?v=638562278565370000&width=800&height=800&aspect=true",
+    description: "Um Bolo Maravilho com sabor de pistache",
+    image: bolopistache,
     images: [
       { src: "https://imgadidas-a.akamaihd.net/360x360/0163498WA1.jpg" },
       { src: "https://imgadidas-a.akamaihd.net/360x360/0163498WA1_1.jpg" },
@@ -58,7 +70,7 @@ export const products = [
     price: 279.99,
     priceDiscount: 199.99,
     description: "Tênis Puma com design retrô e conforto.",
-    image: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/394302/51/sv01/fnd/BRA/w/1000/h/1000/fmt/png",
+    image: bolosensacao,
     images: [
       { src: "https://imgpuma-a.akamaihd.net/360x360/0163499WA1.jpg" },
       { src: "https://imgpuma-a.akamaihd.net/360x360/0163499WA1_1.jpg" },
@@ -82,7 +94,7 @@ export const products = [
     price: 249.99,
     priceDiscount: 179.99,
     description: "Tênis New Balance clássico e versátil.",
-    image: "https://cdn.bnws3.com.br/b2online.com.br/image/cache/data/produtos/new-balance/masculino/tenis-new-balance-574-v2-masculino-vinho---cinza-8784-24-01-24-00-1200x1200.jpg",
+    image: browdocedeleite,
     images: [
       { src: "https://imgnewbalance-a.akamaihd.net/360x360/0163500WA1.jpg" },
       { src: "https://imgnewbalance-a.akamaihd.net/360x360/0163500WA1_1.jpg" },
@@ -106,7 +118,7 @@ export const products = [
     price: 399.99,
     priceDiscount: 299.99,
     description: "Tênis Asics com suporte e estabilidade.",
-    image: "https://asicsbr.vteximg.com.br/arquivos/ids/2744214-1000-1000/null.jpg",
+    image: chocobrow,
     images: [
       { src: "https://imgasics-a.akamaihd.net/360x360/0163501WA1.jpg" },
       { src: "https://imgasics-a.akamaihd.net/360x360/0163501WA1_1.jpg" },

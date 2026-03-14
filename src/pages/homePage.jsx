@@ -6,7 +6,6 @@ import { IoShirtOutline } from "react-icons/io5";
 import { PiBaseballCapLight, PiHeadphonesLight, PiPantsLight } from "react-icons/pi";
 import { GiConverseShoe } from "react-icons/gi";
 import { FaArrowLeft } from "react-icons/fa"; 
-import airJordanImg from '../assets/Laye 1.png';
 import { useNavigate } from 'react-router-dom';
 import bolodepotinho from "../assets/fotos/bolodepoteninhocomnutela.jpg";
 import bolopistache from "../assets/fotos/bolodepotepistache.jpg";
@@ -142,7 +141,7 @@ const HomePage = () => {
             Cones Trufados para o<br />Natal
           </h2>
           <p className="text-gray-600 mb-6 max-w-lg">
-            Não perca essa chanche de conseguir seu Cone Trufado para este Natal. adiquira logo o seu!!
+            Não perca essa chance de conseguir seu Cone Trufado para este Natal. Adiquira logo o seu!!
           </p>
           <button onClick={goToProducts} className="bg-pink-600 hover:bg-pink-700 text-white px-12 py-2 rounded-lg font-semibold transition">
             Ver Oferta
